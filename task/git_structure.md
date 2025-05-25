@@ -8,24 +8,23 @@
 /
 ├── README.md
 ├── docs/
-│   ├── README.md
-│   ├── practice_documentation.md
-│   └── ...
-├── reports/
-│   ├── README.md
-│   ├── report.pdf
-│   └── ...
+│   └── README.md  
+├── reports/ 
+│   └── Отчёт_по_проектной_практике_Ларионова_М.И_241-335.docx
 ├── site/
 │   ├── index.html
+│   ├── about.html
+│   ├── blog.html
+│   ├── resources.html
+│   ├── team.html
 │   ├── css/
 │   │   └── style.css
 │   └── images/
-│       └── logo.png
+│       └── photo_2025-03-05_19-48-11.jpg
 ├── src/
-│   ├── main.py
-│   └── ...
+│   └── main.py
 ├── task/
 │   ├── README.md
-│   └── report_template.md
+│   └── git_structure.md
 └── .gitignore
 ```
