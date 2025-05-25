@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресурсы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О проекте</a>
+                <a href="team.html">Участники</a>
+                <a href="blog.html">Журнал</a>
+                <a href="resources.html">Ресурсы</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ресурсы проекта</h2>
+            <div class="tools-section">
+                <h3>Используемые инструменты</h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h4>2ГИС API</h4>
+                        <p>Мощный инструмент для работы с картографическими данными, который предоставляет доступ к точным картам, геокодированию и маршрутизации. API позволяет интегрировать картографические сервисы 2ГИС в различные приложения и веб-сайты.</p>
+                        <a href="https://dev.2gis.com" target="_blank" class="tool-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Подробнее об API
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h4>Sweet Home 3D</h4>
+                        <p>Бесплатное приложение для дизайна интерьера, которое помогает создавать планы помещений, расставлять мебель и просматривать результаты в 3D. Программа предлагает обширную библиотеку 3D моделей и текстур.</p>
+                        <a href="https://www.sweethome3d.com" target="_blank" class="tool-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Перейти на сайт
+                        </a>
+                    </div>
+                    <div class="tool-card">
+                        <h4>Blender</h4>
+                        <p>Профессиональный пакет для создания трёхмерной компьютерной графики. Включает в себя средства моделирования, анимации, рендеринга, постобработки видео, а также создания игр. Является свободным и открытым программным обеспечением.</p>
+                        <a href="https://www.blender.org" target="_blank" class="tool-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Узнать больше
+                        </a>
+                    </div>
+                </div>
+                <div class="tool-card horizontal">
+                    <div class="tool-card-content">
+                        <div class="tool-card-header">
+                            <h4>Пожарные планы этажей</h4>
+                            <p>Важный источник информации для создания точных планов помещений. Планы эвакуации, размещенные в свободном доступе на этажах университета, предоставляют детальную схему расположения помещений, что значительно упрощает процесс измерений и моделирования.</p>
+                        </div>
+                        <div class="tool-features">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>Находятся в открытом доступе на этажах</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partner-section">
+            <h2>Наш партнер</h2>
+            <div class="partner-content">
+                <div class="partner-info">
+                    <h3>2ГИС</h3>
+                    <p>2ГИС — это городской информационный сервис, который сочетает в себе бесплатный справочник организаций, точную карту города и навигатор. Сервис предоставляет актуальные данные об организациях, их адресах, контактной информации, отзывах и фотографиях, а также строит маршруты для пешеходов, автомобилистов, велосипедистов и пользователей общественного транспорта.</p>
+                    <div class="partner-features">
+                        <div class="feature">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <span>Точные карты</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-building"></i>
+                            <span>Справочник организаций</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-route"></i>
+                            <span>Умная навигация</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Актуальные данные</span>
+                        </div>
+                    </div>
+                    <div class="partner-link">
+                        <a href="https://2gis.ru/moscow" target="_blank" class="website-btn">
+                            <i class="fas fa-external-link-alt"></i>
+                            Официальный сайт 2ГИС
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Студенты Московского Политеха</p>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollToTopButton = document.getElementById('scrollToTop');
+
+            // Показываем/скрываем кнопку при прокрутке
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    scrollToTopButton.classList.add('visible');
+                } else {
+                    scrollToTopButton.classList.remove('visible');
+                }
+            });
+
+            // Плавная прокрутка наверх при клике
+            scrollToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

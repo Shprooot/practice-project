@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Проект</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="about.html">О проекте</a>
+                <a href="team.html">Участники</a>
+                <a href="blog.html">Журнал</a>
+                <a href="resources.html">Ресурсы</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-intro">
+            <h2>Автоматизация внутренних бизнес-процессов университета. 2ГИС</h2>
+            <div class="project-description">
+                <p>Проект по совершенствованию логистики университета в сотрудничестве с компанией 2ГИС.</p>
+                <h3>Основные цели проекта:</h3>
+                <ul>
+                    <li>Повышение навигационной доступности</li>
+                    <li>Создание цифровых 3D-моделей зданий</li>
+                    <li>Оптимизация внутренних процессов</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="project-capabilities">
+            <h2>Основные возможности</h2>
+            <div class="capabilities-grid">
+                <div class="capability-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Навигация внутри зданий</h3>
+                    <p>Точное определение местоположения и навигация между аудиториями.</p>
+                </div>
+                <div class="capability-item">
+                    <i class="fas fa-vr-cardboard"></i>
+                    <h3>3D-визуализация</h3>
+                    <p>Интерактивные трехмерные модели корпусов с виртуальным осмотром.</p>
+                </div>
+                <div class="capability-item">
+                    <i class="fas fa-route"></i>
+                    <h3>Оптимизация маршрутов</h3>
+                    <p>Построение оптимальных путей с учетом загруженности помещений.</p>
+                </div>
+                <div class="capability-item">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>Анализ потоков</h3>
+                    <p>Мониторинг перемещений для оптимизации инфраструктуры.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-features">
+            <h2>Особенности проекта</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <i class="fas fa-cube"></i>
+                    <h3>Инновационность</h3>
+                    <p>Внедрение 3D-моделей зданий в навигационные сервисы для улучшенной и интерактивной ориентации внутри корпусов университета.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Актуальность</h3>
+                    <p>Необходимость удобной навигации в сложной инфраструктуре университета и соответствие современным цифровым трендам.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-tasks"></i>
+                    <h3>Практическая значимость</h3>
+                    <p>Упрощение поиска помещений, повышение безопасности, оптимизация управления и улучшение имиджа университета за счет современных технологий.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="join-project">
+            <h2>Хотите присоединиться к проекту?</h2>
+            <div class="join-info">
+                <a href="team.html" class="join-button">Присоединиться к команде</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>© 2025 Студенты Московского Политеха</p>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const scrollToTopButton = document.getElementById('scrollToTop');
+
+            // Показываем/скрываем кнопку при прокрутке
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    scrollToTopButton.classList.add('visible');
+                } else {
+                    scrollToTopButton.classList.remove('visible');
+                }
+            });
+
+            // Плавная прокрутка наверх при клике
+            scrollToTopButton.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
