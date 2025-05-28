@@ -3,7 +3,9 @@
 **Дата:** 14.05.2025  
 **Место проведения:** Москва, Государственная Третьяковская галерея
 
-<img src="photo_2025-05-14_20-25-49" alt="Alt text" style="width: 50%; height: auto;" />
+<img src="photo_2025-05-14_20-25-49" alt="Alt text" style="width: 50%; height: auto;" /> ![photo_2025-05-14_20-25-49](https://github.com/user-attachments/assets/815eb4ef-f839-4abc-8bb2-196ecbd7ab54)
+
+
 ### 1. Bacteria as a service или случайный шум.
 Проект посвящен теме живого и неживого в технологиях через осмысление роли случайного шума в алгоритмах нейросетей.
 
